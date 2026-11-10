@@ -40,13 +40,12 @@ jobs:
           DB_PASSWORD: rootpassword
           DB_NAME: test
         run: |
-          # Lance l'application Flask en arrière-plan
+          
           python app.py &
           
-          # Attends que l'application démarre
+     
           sleep 3
           
-          # Teste la page d'accueil et vérifie la chaîne de caractères attendue
           response=$(curl -s http://localhost:5000/)
           echo "Response received: $response"
           
