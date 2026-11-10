@@ -130,3 +130,8 @@ docker run --rm -p 5000:5000 \
 - Le fichier de dépendances s'appelle `requirements.text` et non `requirements.txt` dans ce dépôt.
 - Pour un environnement de développement, il est conseillé d'utiliser un virtualenv comme indiqué ci-dessus.
 -nb \n# CI Status: Active
+
+
+## Pistes et démarches
+Création d'un fichier ci.yml afin d'automatiser les tests lors de la pull request
+utilisation du ruleset de github pour enforcer les tests afin de pouvoir merge la pull request
